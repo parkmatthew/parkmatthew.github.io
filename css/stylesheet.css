@@ -21,7 +21,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: red;
+  color: #f00;
 }
 
 
@@ -36,9 +36,9 @@ body {
 /* 레이아웃 */
 
 .wrapper {
-  background: silver;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .header,
@@ -49,12 +49,8 @@ body {
   width: 100%;
 }
 
-.navigation {
-  background: pink;
-}
-
 .main-content {
-  background: skyblue;
+  background: blue;
 }
 
 .slogan {
@@ -84,7 +80,7 @@ body {
   .member a {
     display: block;
     padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
+    margin-left: 0.5rem
   }
   .logo {
     padding: 1rem;
@@ -105,11 +101,8 @@ body {
     border-radius: 5px;
     padding: 0.2rem 1rem;
     background: #988574;
-    color: white;
+    color: #fff;
     height: 30px;
-  }
-  body {
-    background: blue;
   }
 }
 
@@ -121,10 +114,68 @@ body {
     align-items: center;
   }
   .header,
-  .navigation,
+  .main-menu,
   .main-content,
   .slogan,
   .footer {
     width: 80%;
+  }
+  .header {
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .member {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .member a {
+    display: block;
+    padding: 1rem 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .search-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search input {
+    width: 400px;
+    height: 35px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 0 0 1rem;
+    margin-right: 1rem;
+  }
+  .btn-search {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #988574;
+    color: #fff;
+    padding: 0 1rem;
+  }
+  .navigation {
+    background: #988574;
+    border-top: 2px solid #222;
+    border-bottom: 2px solid #222;
+    padding: 1rem 0;
+  }
+  .main-menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+  }
+  .main-menu span {
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: -1px 0 0 #000, 0 -1px 0 #000, 1px 0 0 #000, 0 1px 0 #000;
+  }
+  .sub-menu li {
+    margin: 0.5rem 0 0.5rem 0.5rem;
   }
 }
