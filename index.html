@@ -83,11 +83,26 @@
       </ul>
     </nav>
     <main class="main-content">
-      <section class="reccomend-book">추천서적</section>
-      <section class="news">새소식</section>
-      <section class="board">게시판</section>
-      <section class="favorite-site">인기사이트</section>
-      <section class="twitter">트위터</section>
+      <section class="reccomend-book">
+        <h2 class="reccomend-book-subject main-content-subject">추천 서적
+          <span class="en-subject">Recommend Book</span></h2>
+      </section>
+      <section class="news">
+        <h2 class="news-subject main-content-subject">새 소식
+          <span class="en-subject">Webcafe News</span></h2>
+      </section>
+      <section class="board">
+        <h2 class="board-subject main-content-subject">게시판
+          <span class="en-subject">Board</span></h2>
+      </section>
+      <section class="favorite-site">
+        <h2 class="favorite-site-subject main-content-subject">인기 사이트
+          <span class="en-subject">Favorite-Site</span></h2>
+      </section>
+      <section class="twitter">
+        <h2 class="twitter-subject main-content-subject">트위터
+          <span class="en-subject">Twitter</span></h2>
+      </section>
     </main>
     <article class="slogan">슬로건</article>
     <footer class="footer">푸터</footer>
@@ -96,31 +111,6 @@
   <script src="js/jquery.js"></script>
   <script src="js/menu.js"></script>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var btn_bar = $('.btn-menubar, .menubar');
-      var container = $('.menubar-container');
-      var menu = $('.main-menu');
-      var act = $('.menubar-act');
-      var btn = $('.btn-menubar');
-      var last = $('.main-menu > li:last-child li:last-child a');
-
-      btn_bar.click(function() {
-        container.toggleClass('menubar-act');
-        menu.toggleClass('menu-act');
-        if (container.hasClass('menubar-act')) {
-          btn.text('메인메뉴 닫기');
-        } else {
-          btn.text('메인메뉴 열기');
-        }
-      });
-      last.focusout(function() {
-        container.removeClass('menubar-act');
-        menu.removeClass('menu-act');
-      });
-    });
-  </script> -->
 </body>
 
 </html>
