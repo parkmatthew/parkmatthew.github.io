@@ -52,7 +52,7 @@ body {
 .navigation,
 .main-content,
 .slogan,
-.footer {
+.footer-bg {
   width: 100%;
 }
 
@@ -167,7 +167,7 @@ body {
 
 .board-more {
   position: absolute;
-  top: 0;
+  top: 3rem;
   right: 0;
 }
 
@@ -214,18 +214,6 @@ body {
   text-align: right;
 }
 
-.twitter-user {}
-
-.twitter-content {}
-
-.slogan {
-  background: orange;
-}
-
-.footer {
-  background: lime;
-}
-
 
 /* 새소식*/
 
@@ -235,7 +223,7 @@ body {
 
 .news time {
   display: block;
-  text-align: center;
+  text-align: right;
 }
 
 
@@ -251,6 +239,16 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.footer-bg {
+  background: #988574;
+}
+
+address,
+.copyright {
+  color: #fff;
+  margin: 0.5rem 0;
 }
 
 
@@ -377,6 +375,21 @@ body {
   .sub-menu li {
     margin: 0.5rem 0;
   }
+  .slogan {
+    padding: 1rem 2rem;
+  }
+  .slogan-heading {
+    position: absolute;
+    left: -9999em;
+    box-sizing: border-box;
+  }
+  .footer {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+  }
+  address span {
+    display: block;
+  }
 }
 
 
@@ -389,8 +402,7 @@ body {
   .header,
   .main-menu,
   .main-content,
-  .slogan,
-  .footer {
+  .slogan {
     width: 80%;
   }
   .header {
@@ -453,5 +465,68 @@ body {
   }
   .sub-menu li {
     margin: 0.5rem 0 0.5rem 0.5rem;
+  }
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .recommend-book {
+    width: 34%;
+  }
+  .news {
+    width: 64%;
+  }
+  .board {
+    width: 37%;
+  }
+  .twitter {
+    width: 37%;
+  }
+  .twitter-profile {
+    padding: 0 1rem;
+  }
+  .favorite-site {
+    order: 1;
+  }
+  .board,
+  .twitter,
+  .favorite-site {
+    margin: 20px 0;
+  }
+  .favorite-site ol {
+    margin-left: 1.5rem;
+  }
+  .recommend-book,
+  .news,
+  .board,
+  .favorite-site {
+    border-bottom: 0;
+  }
+  .slogan {
+    padding: 1rem 0;
+    position: relative;
+  }
+  .slogan-heading {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 110px;
+    height: 83px;
+    background: url('images/coffee.png') no-repeat;
+    padding-top: 83px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .slogan-content {
+    margin: 0 3rem 0 10rem;
+  }
+  .slogan-content q {
+    font-weight: 700;
+  }
+  .footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 15rem;
   }
 }
